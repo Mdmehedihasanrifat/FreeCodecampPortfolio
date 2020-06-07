@@ -109,7 +109,8 @@ li {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem; }
+  padding: 1rem;
+  position: fixed; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -125,6 +126,10 @@ li {
       border-color: #afabab; }
     #main-nav a.current {
       border-color: #e3e311; }
+
+#welcome-section {
+  margin-top: 20vh;
+  height: 100vh; }
 
 #header-main {
   background: url("../img/irvan-smith-ymn_TY_MBn8-unsplash.jpg") no-repeat center right/cover;
@@ -167,14 +172,54 @@ li {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   text-align: center; }
-  #home-c .process-step {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 28px;
-    border-radius: 50%;
-    line-height: 15px;
-    padding: 1rem;
-    height: 15px;
-    width: 15px;
-    background: #e3e311; }
+
+.process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  border-radius: 50%;
+  line-height: 10px;
+  padding: 1.25rem;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background: #e3e311;
+  transition: all 1s; }
+
+.process-icon {
+  border-radius: 50%;
+  background: #282727;
+  color: white;
+  height: 100px;
+  width: 100px;
+  line-height: 70px;
+  padding: 2rem;
+  position: relative;
+  transition: all 1s; }
+  .process-icon:hover {
+    width: 120px;
+    height: 120px;
+    line-height: 100px;
+    background: #e3e311;
+    padding: 2rem;
+    color: red; }
+
+.main-footer {
+  background: #282727;
+  color: white;
+  height: 5rem; }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem; }
+
+.social .fab {
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: .25rem;
+  color: white;
+  padding: 1rem;
+  height: 4rem; }
