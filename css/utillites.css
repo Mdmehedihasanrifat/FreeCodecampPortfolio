@@ -1,0 +1,76 @@
+.container {
+  width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: .8rem .2rem;
+  cursor: pointer;
+  transition: all .5s;
+  border: none; }
+
+.btn-main {
+  color: #1f1d1d;
+  background: #e3e311; }
+
+.btn-light {
+  color: #1f1d1d;
+  background: #f8f0f0;
+  border-radius: 2rem; }
+
+.btn-dark {
+  color: #fff;
+  background: #282727; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[clas^='btn-']:hover {
+  background: #e3e311; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 1rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0rem; }
+
+.py-2 {
+  padding: 2rem 0rem; }
+
+.py-3 {
+  padding: 3rem 0rem; }
+
+.py-4 {
+  padding: 1rem 0rem; }
+
+my-1 {
+  margin: 1rem 0rem; }
+
+.my-2 {
+  margin: 2rem 0rem; }
+
+.my-3 {
+  margin: 3rem 0rem; }
+
+.my-4 {
+  margin: 1rem 0rem; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  display: block;
+  color: #e3e311;
+  margin: 0 auto 1rem auto; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: .5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }

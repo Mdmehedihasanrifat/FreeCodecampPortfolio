@@ -1,0 +1,181 @@
+@import "config";
+@import "utillites";
+body{
+
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a{
+
+  text-decoration: none;
+  color: $dark-color;
+
+
+}
+
+
+ul {
+  list-style: none;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+
+  text-transform:uppercase;
+}
+
+
+img{
+
+  width:100%;}
+
+li{
+
+  list-style: none;
+}
+
+.logo{
+
+  height: 70px;
+  width: 70px;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+#main-nav{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  ul{
+
+    display: flex;
+  }
+  li{
+    padding: 1rem 1.5rem;
+  }
+
+a{
+
+  text-decoration: none;
+  color:white;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent ;
+  padding-bottom: .5rem;
+  transition: border-color .5s;
+
+  &:hover{
+
+    border-color: $medium-color;
+
+  }
+
+  &.current{
+    border-color: $main_color;
+  }
+}
+
+}
+#header{
+
+  &-main{
+
+    background: $bg-img no-repeat center right/cover;
+    height: 100vh;
+    color: white;
+  margin-top:-20px;
+  }
+}
+
+.specialize{
+
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1fr;
+      grid-template-columns: repeat(3,1fr);
+
+
+      .fas{
+        color:$main_color;
+        padding-bottom: 1rem;
+      }
+
+    }
+
+.stats {
+
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+   li{
+
+     line-height: 2;
+   }
+      .stats-title{
+
+        font-size: 1.5rem;
+      }
+      .stats-user{
+        font-size: 2rem;
+        font-weight:bold;
+      }
+
+      .fas {
+        color: $main_color;
+        padding-bottom: 1rem;
+      }
+  div{
+    padding: 3rem 0;
+    &:nth-child(even){
+      background: #afabab;
+    }
+    &:nth-child(odd){
+
+      background: white;
+    }
+
+  }
+
+    }
+#home{
+
+  &-c{
+   .process{
+
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 1.5rem;
+     text-align: center;
+
+     &-step{
+       position: absolute;
+       top:0;
+       right: 0;
+       font-size: 28px;
+       border-radius: 50%;
+       line-height: 15px;
+       padding: 1rem;
+       height: 15px;
+       width: 15px;
+       background: $main_color;
+
+     }
+   }
+
+  }
+}
+
+
+
+
