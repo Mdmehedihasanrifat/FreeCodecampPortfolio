@@ -109,8 +109,7 @@ li {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  position: fixed; }
+  padding: 1rem; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -127,15 +126,18 @@ li {
     #main-nav a.current {
       border-color: #e3e311; }
 
-#welcome-section {
-  margin-top: 20vh;
-  height: 100vh; }
-
 #header-main {
   background: url("../img/irvan-smith-ymn_TY_MBn8-unsplash.jpg") no-repeat center right/cover;
   height: 100vh;
-  color: white;
-  margin-top: -20px; }
+  color: white; }
+
+#header-inner {
+  background: url("../img/irvan-smith-ymn_TY_MBn8-unsplash.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #e3e311; }
+
+.header-content {
+  margin-top: 170px; }
 
 .specialize {
   margin-top: 3rem;
@@ -223,3 +225,15 @@ li {
   color: white;
   padding: 1rem;
   height: 4rem; }
+
+.about-info {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas: 'bio-image bio bio';
+  grid-gap: 1.3rem; }
+
+.bio-image {
+  grid-area: bio-image; }
+
+.bio {
+  grid-area: bio; }
