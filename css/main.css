@@ -122,7 +122,7 @@ li {
     padding-bottom: .5rem;
     transition: border-color .5s; }
     #main-nav a:hover {
-      border-color: #afabab; }
+      border-color: #cbc3c3; }
     #main-nav a.current {
       border-color: #e3e311; }
 
@@ -237,3 +237,22 @@ li {
 
 .bio {
   grid-area: bio; }
+
+#about-c {
+  background: #1f1d1d;
+  color: white;
+  width: 80%;
+  margin: 0 10% 2% 10%; }
+  #about-c .progress {
+    overflow: hidden;
+    height: 20px;
+    color: white;
+    background: #cbc3c3;
+    border-radius: 5px;
+    border-bottom: .3rem;
+    margin: 2rem; }
+    #about-c .progress div {
+      height: 100%;
+      color: white;
+      text-align: center;
+      background: #e3e311; }

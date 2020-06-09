@@ -273,3 +273,28 @@ a{
 
   grid-area:bio;
 }
+
+
+#about-c{
+background: #1f1d1d;
+  color: white;
+  width: 80%;
+  margin:0 10% 2% 10%;
+
+  .progress{
+    overflow: hidden;
+    height:20px;
+    color: white;
+    background: $medium-color;
+    border-radius: 5px;
+    border-bottom: .3rem;
+    margin: 2rem;
+    div{
+      height: 100%;
+      color: white;
+      text-align: center;
+      background:$main_color;
+    }
+
+  }
+}
