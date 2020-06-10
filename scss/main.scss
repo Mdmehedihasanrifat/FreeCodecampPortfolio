@@ -1,5 +1,6 @@
 @import "config";
 @import "utillites";
+@import "media";
 body{
 
   font-family: 'Poppins', sans-serif;
@@ -229,7 +230,7 @@ a{
 
   background: $dark-color;
   color: white;
-  height: 5rem;
+  height: 6rem;
 
 
 }
@@ -238,7 +239,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 6rem;
 
 
 
@@ -298,3 +299,78 @@ background: #1f1d1d;
 
   }
 }
+
+
+#contact-a{
+
+.text-fields{
+
+
+  display: grid;
+  grid-template-areas:'name email'
+                      'subject phone'
+                      'message message';
+
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+  .name-input{
+
+    grid-area:name;
+  }
+  .email-input{
+
+    grid-area:email;
+  }
+
+  .subject-input{
+
+    grid-area:subject;
+  }
+  .phone-input{
+
+    grid-area:phone;
+  }
+  .message-input{
+
+    grid-area:message;
+    height: 100px;
+  }
+}
+
+
+#contact-b{
+  color: white;
+  padding: 1rem;
+
+  .contact-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    .fas{
+
+      border-radius: 50%;
+      border: 1px solid white;
+      margin-right: .25rem;
+      color: white;
+      padding: 1rem;
+      height: 4rem;
+
+
+    }
+
+
+
+  }
+}
+#contact-c{
+
+
+  height:30vh;
+  color:white;
+  align-items: center;
+  h1{
+    margin-top: 10vh;
+  }
+}
+

@@ -6,7 +6,7 @@
 
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
-  padding: .8rem .2rem;
+  padding: 1rem .5rem;
   cursor: pointer;
   transition: all .5s;
   border: none; }
@@ -22,7 +22,8 @@
 
 .btn-dark {
   color: #fff;
-  background: #282727; }
+  background: #282727;
+  border-radius: 1rem; }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,

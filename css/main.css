@@ -6,7 +6,7 @@
 
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
-  padding: .8rem .2rem;
+  padding: 1rem .5rem;
   cursor: pointer;
   transition: all .5s;
   border: none; }
@@ -22,7 +22,8 @@
 
 .btn-dark {
   color: #fff;
-  background: #282727; }
+  background: #282727;
+  border-radius: 1rem; }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
@@ -74,6 +75,20 @@ my-1 {
   text-align: center;
   font-weight: 100;
   text-transform: uppercase; }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 35rem;
+    background: red; }
+  .header-content {
+    padding: 5rem; } }
+
+@media (max-width: 560px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+  li {
+    padding: 1rem; } }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -210,13 +225,13 @@ li {
 .main-footer {
   background: #282727;
   color: white;
-  height: 5rem; }
+  height: 6rem; }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem; }
+  height: 6rem; }
 
 .social .fab {
   border-radius: 50%;
@@ -256,3 +271,46 @@ li {
       color: white;
       text-align: center;
       background: #e3e311; }
+
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+
+#contact-a .name-input {
+  grid-area: name; }
+
+#contact-a .email-input {
+  grid-area: email; }
+
+#contact-a .subject-input {
+  grid-area: subject; }
+
+#contact-a .phone-input {
+  grid-area: phone; }
+
+#contact-a .message-input {
+  grid-area: message;
+  height: 100px; }
+
+#contact-b {
+  color: white;
+  padding: 1rem; }
+  #contact-b .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #contact-b .contact-info .fas {
+      border-radius: 50%;
+      border: 1px solid white;
+      margin-right: .25rem;
+      color: white;
+      padding: 1rem;
+      height: 4rem; }
+
+#contact-c {
+  height: 30vh;
+  color: white;
+  align-items: center; }
+  #contact-c h1 {
+    margin-top: 10vh; }
